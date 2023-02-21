@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:black;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 40px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    margin-top: 20px;
+  }
+  
