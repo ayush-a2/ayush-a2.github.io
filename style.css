@@ -11,7 +11,7 @@
 .sofskills div{
  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
 }
-.skills img{
+.skills-card img{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
 }
 /* all similar content styling codes */
@@ -32,12 +32,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.aboutsection, .services, .skills-card, .project-card, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content,
+.aboutsection .about-content,
 .services .serv-content,
-.skills .skills-content,
+.skills-card .skills-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +45,7 @@ section{
     justify-content: space-evenly;
     
 }
-section .title{
+section .project-title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -54,7 +54,7 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-section .title::before{
+section .project-title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -78,7 +78,7 @@ section .title::before{
 
 }
 
-section .title::after{
+section .project-title::after{
     position: absolute;
     bottom: -8px;
     left: 50%;
@@ -91,12 +91,12 @@ section .title::after{
 
 /* skills
 */
-.skills img{
+.skills-card img{
     width:50%;
     height: 150px;
 
 }
-.skills{
+.skills-card{
     display: grid;
     column-gap: 30px;
     row-gap: 50px;
@@ -109,8 +109,8 @@ section .title::after{
 
 }
 
-/* navbar styling */
-.navbar{
+/* navba styling */
+#nav-menu{
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -118,32 +118,32 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.8s ease;
 }
-.navbar.sticky{
+#nav-menu.sticky{
     padding: 15px 0;
     background: goldenrod;
 }
-.navbar .max-width{
+#nav-menu .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
+#nav-menu .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+#nav-menu .logo a span{
     color: goldenrod;
     transition: all 10s ease;
 }
-.navbar.sticky .logo a span{
+#nav-menu.sticky .logo a span{
     color: #fff;
 }
-.navbar .menu li{
+#nav-menu .menu li{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+#nav-menu .menu li a{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -151,10 +151,10 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.10s ease;
 }
-.navbar .menu li a:hover{
+#nav-menu .menu li a:hover{
     color: goldenrod;
 }
-.navbar.sticky .menu li a:hover{
+#nav-menu.sticky .menu li a:hover{
     color: #fff;
 }
 
@@ -220,32 +220,32 @@ section .title::after{
 
 /* about section styling */
 
-.about .about-content .left{
+.aboutsection .about-content .left{
     width: 45%;
     margin-left: -220px;
 }
-.about .about-content .left img{
+.aboutsection .about-content .left img{
     height: 500px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
 }
-.about .about-content .right{
+.aboutsection .about-content .right{
     width: 55%;
 }
-.about .about-content .right .text{
+.aboutsection .about-content .right .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about .about-content .right .text span{
+.aboutsection .about-content .right .text span{
     color: goldenrod;
 }
-.about .about-content .right p{
+.aboutsection .about-content .right p{
     text-align: justify;
 }
 
-.about .about-content .right a{
+.aboutsection .about-content .right a{
     display: inline-block;
     background: goldenrod;
     color: #fff;
@@ -257,7 +257,7 @@ section .title::after{
     border: 2px solid goldenrod;
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+.aboutsection .about-content .right a:hover{
     color: goldenrod;
     background: none;
 }
@@ -270,10 +270,10 @@ section .title::after{
 
 
 /* teams section styling */
-.teams .title::after{
+.project-card .project-title::after{
     content: "I have created";
 }
-.teams .carousel .card{
+.project-card .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -284,13 +284,13 @@ section .title::after{
 
   
 }
-.teams .carousel .card:hover{
+.project-card .carousel .card:hover{
     background: goldenrod;
 }
-.texta{
+.project-description{
     color:white
 }
-.teams .carousel .card .box{
+.project-card .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -298,15 +298,15 @@ section .title::after{
     transition: all 0.3s ease;
     margin:40px;
 }
-.teams .carousel .card:hover .box{
+.project-card .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.project-card .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.project-card .carousel .card img{
     height: 200px;
     width: 200px;
     object-fit: cover;
@@ -314,7 +314,7 @@ section .title::after{
     border: 5px solid goldenrod;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.project-card .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -340,7 +340,7 @@ section .title::after{
 }
 
 /* contact section styling */
-.contact .title::after{
+.contact .project-title::after{
     content: "get in touch";
 }
 
@@ -392,7 +392,7 @@ section .title::after{
 
 /* responsive media query start */
 @media (max-width: 1104px) {
-    .about .about-content .left img{
+    .aboutsection .about-content .left img{
         height: 350px;
         width: 350px;
     }
@@ -418,7 +418,7 @@ section .title::after{
         content: "\f00d";
     }
 
-    .skills{
+    .skills-card{
         display: grid;
         column-gap: 30px;
         row-gap: 50px;
@@ -431,7 +431,7 @@ section .title::after{
     
     }
     
-    .navbar .menu{
+    #nav-menu .menu{
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -442,10 +442,10 @@ section .title::after{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
+    #nav-menu .menu.active{
         left: 0;
     }
-    .navbar .menu li{
+    #nav-menu .menu li{
         display: block;
     }
     #sofskills{
@@ -456,7 +456,7 @@ section .title::after{
     }
 
     
-    .navbar .menu li a{
+    #nav-menu .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
@@ -474,22 +474,22 @@ section .title::after{
     .max-width{
         max-width: 930px;
     }
-    .about .about-content .column{
+    .aboutsection .about-content .column{
         width: 100%;
     }
-    .about .about-content .left{
+    .aboutsection .about-content .left{
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right{
+    .aboutsection .about-content .right{
         flex: 100%;
     }
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column
+    .skills-card .skills-content .column
     {
         width: 100%;
         margin-bottom: 35px;
@@ -497,12 +497,12 @@ section .title::after{
 }
 
 @media (max-width: 690px) {
-    .skills img{
+    .skills-card img{
         width:50%;
         height: 100px;
     
     }
-    .skills{
+    .skills-card{
         display: grid;
         column-gap: 30px;
         row-gap: 50px;
@@ -538,8 +538,8 @@ section .title::after{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    .aboutsection .about-content .right .text,
+    .skills-card .skills-content .left .text{
         font-size: 19px;
     }
     .contact .right form .fields{
@@ -553,12 +553,12 @@ section .title::after{
        width: 150px;
     }
 
-    .skills img{
+    .skills-card img{
         width:50%;
         height: 100px;
     
     }
-    .skills{
+    .skills-card{
         display: grid;
         column-gap: 30px;
         row-gap: 50px;

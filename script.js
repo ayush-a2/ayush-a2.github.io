@@ -2,9 +2,9 @@ $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
         if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
+            $('#nav-menu').addClass("sticky");
         }else{
-            $('.navbar').removeClass("sticky");
+            $('#nav-menu').removeClass("sticky");
         }
         
 
@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
+        $('#nav-menu .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
