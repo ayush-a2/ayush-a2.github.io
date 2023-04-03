@@ -110,7 +110,7 @@ section .project-title::after{
 }
 
 /* navba styling */
-#nav-menu{
+#nav-men{
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -118,32 +118,32 @@ section .project-title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.8s ease;
 }
-#nav-menu.sticky{
+#nav-men.sticky{
     padding: 15px 0;
     background: goldenrod;
 }
-#nav-menu .max-width{
+#nav-men .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#nav-menu .logo a{
+#nav-men .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-#nav-menu .logo a span{
+#nav-men .logo a span{
     color: goldenrod;
     transition: all 10s ease;
 }
-#nav-menu.sticky .logo a span{
+#nav-men.sticky .logo a span{
     color: #fff;
 }
-#nav-menu .menu li{
+#nav-men .menu li{
     list-style: none;
     display: inline-block;
 }
-#nav-menu .menu li a{
+#nav-men .menu li a{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -151,10 +151,10 @@ section .project-title::after{
     margin-left: 25px;
     transition: color 0.10s ease;
 }
-#nav-menu .menu li a:hover{
+#nav-men .menu li a:hover{
     color: goldenrod;
 }
-#nav-menu.sticky .menu li a:hover{
+#nav-men.sticky .menu li a:hover{
     color: #fff;
 }
 
@@ -431,7 +431,7 @@ section .project-title::after{
     
     }
     
-    #nav-menu .menu{
+    #nav-men .menu{
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -442,10 +442,10 @@ section .project-title::after{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    #nav-menu .menu.active{
+    #nav-men .menu.active{
         left: 0;
     }
-    #nav-menu .menu li{
+    #nav-men .menu li{
         display: block;
     }
     #sofskills{
@@ -456,7 +456,7 @@ section .project-title::after{
     }
 
     
-    #nav-menu .menu li a{
+    #nav-men .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
