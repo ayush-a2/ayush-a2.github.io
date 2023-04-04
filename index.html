@@ -1,303 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="description" name="description" />
+    <meta name="google" content="notranslate" />
+    <meta
+      content="Mashup templates have been developped by Orson.io team"
+      name="author"
+    />
 
-</head>
-<body>
-    
-    </div id="nav-menu">
-    <nav id="nav-men">
-        <div class="max-width">
-            <div class="logo"><a id="user-detail-name" href="#">Ayush</a></div>
-            <ul class="menu">
-                <li><a href="#home"  class="menu-btn"  class="nav-link home">Home</a></li>
-                <li><a href="#about"  class="menu-btn" class="nav-link about" >About</a></li>
-                
-                <li><a href="#skills"   class="menu-btn" class="nav-link skills">Skills</a></li>
-                <li><a href="#teams"  class="nav-link projects " class="menu-btn" class="nav-link skills">Project</a></li>
-                <li><a href="#contact"   class="menu-btn" class="nav-link contact">Contact</a></li>
-                <li><a id="resume-link-1" href="images\Ayush_Gupta_Resume_16-02-2023-21-38-13 (9).pdf" id="resume-link-2" download =  "images\Ayush_Gupta_Resume_16-02-2023-21-38-13 (9).pdf"  class="btn btn--primary" class="nav-link resume" onclick="window.open
-                ('https://drive.google.com/file/d/1QPGUETLJiWWV7Py4MPkcvpeyl5hw3iIJ/view?usp=share_link')" >Resume</a></li>
-              
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
 
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-icon-180x180.png"
+    />
+    <link href="./assets/favicon.ico" rel="icon" />
+
+    <title>Ayush Gupta - Portfolio</title>
+
+    <link href="./main.d8e0d294.css" rel="stylesheet" />
+  </head>
+  <link rel="stylesheet" href="./navStyle.css" />
+
+  <body class="" >
+    <section id="home"></section>
+    <nav id="nav-menu">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <label class="logo">Ayush</label>
+      <ul class="nav_option">
+        <li><a class="active nav-link home" href="#home"></a></li>
+        <li><a class="active nav-link home" href="#">Home</a></li>
+        
+        <li><a class="active nav-link projects" href="#projects">Project</a></li>
+        
+        <li><a class="active nav-link about" href="#Education">Education</a></li>
+        <li><a class="active nav-link skills"  href="#skills">Skills</a></li>
+        <li><a class="active nav-link contact"   href="#contact">Contact</a></li>
+        <li>
+          <a class="nav-link resume" id="resume-button-1"
+            class="active"
+            href="assets\images\resume\Ayush_Gupta_Resume_16-02-2023-21-38-13 (9).pdf"
+            download="assets\images\resume\Ayush_Gupta_Resume_16-02-2023-21-38-13 (9).pdf"
+            target="_blank"
+            onclick="window.open('https://drive.google.com/file/d/1QPGUETLJiWWV7Py4MPkcvpeyl5hw3iIJ/view?usp=share_link')"
+            >Resume</a
+          >
+        </li>
+      </ul>
     </nav>
 
-    <!-- home section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Ayush Gupta</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="#contact">Hire me</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- about section start -->
-    <section class="aboutsection" id="about">
-        <div class="max-width">
-            <h2 class="project-title">About me</h2>
-            <div class="about-content">
-                <div class="column left" >
-                    <img class="home-img" style="margin-left:40px" src="images\ayush.jpg" alt="" >
-                </div>
-                <div class="column right">
-                    <div id="user-detail-intro" text">I'm Ayush and I'm a <span class="typing-2"></span></div>
-                    <p>An Aspiring Java Backned, customer-oriented and
-                        self-driven adept at providing professional technical support
-                        to clients, monitoring products and services with developing
-                        detailed technical guides. Offers excellent technological
-                        expertise, analytical and problem solving skills.
-                        </p>
-                        <li id = "down"><a   id="resume-button-1" href="images\Ayush_Gupta_Resume_16-02-2023-21-38-13 (9).pdf" id="resume-button-2"
-                            download = "images\Ayush_Gupta_Resume_16-02-2023-21-38-13 (9).pdf" class="btn btn--primary" onclick="window.open('https://drive.google.com/file/d/1QPGUETLJiWWV7Py4MPkcvpeyl5hw3iIJ/view?usp=share_link')" >Download Resume</a></li>
-                </div>
-            </div>
-        </div>
-    </section>
-
-   
-
-    <!-- skills section start -->
-    <h2  style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color:crimson">Tech Skills</h2>
-    <section class="skills-card" id="skills">
-        <div>
-        <img  class="skills-card-img"  class="skills-card-name"
-        src="https://logos-world.net/wp-content/uploads/2020/09/Linux-Logo-700x394.png" ></div>
-      <div> 
-        <img class="skills-card-img"  class="skills-card-name" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png"></div>
-      <div><img class="skills-card-img"  class="skills-card-name" src="https://cdn-icons-png.flaticon.com/512/919/919826.png"></div> 
-    <div>  <img class="skills-card-img"  class="skills-card-name" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/900px-JavaScript-logo.png?20120221235433" alt=""></div> 
-    <div>  <img class="skills-card-img"  class="skills-card-name" src="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2019/07/image2-1.png?w=600&ssl=1"></div> 
-    <div>  <img class="skills-card-img"  class="skills-card-name" src="https://bashlogo.com/img/logo/png/full_colored_dark.png" alt=""></div> 
-       
-      
-    </section>
-
-
- 
-
-
-    <!-- teams section start -->
-    <section class="project-card" id="teams">
-        <div class="max-width">
-            <h2 class="project-title">My Projects</h2>
-            <div class="carousel owl-carousel">
+    <!-- Add your content of header -->
+    <div
+      class="background-color-layer"
+      style="background-image: url('')"
+    >
+    </div>
+    <main class="content-wrapper">
+      <header class="white-text-container section-container">
+        <div  class="text-center">
+          <h1 id="user-detail-name">I am Ayush Gupta</h1>
+          <p  id="user-detail-intro">Java Backend Developer</p>
+          <p>
+         
            
-                <div class="card">
-                   
-                    <div class="box">
-                       
-                        <a   style="
-                        background-color: crimson;
-                        border-radius: 20px;
-                        padding:10px;
-                        margin:10px"  href="https://harmonious-druid-e5f2ce.netlify.app/" target="_blank" class="project-deployed-link">netlify link</a>
-                        <a style="
-                        background-color: crimson;
-                        border-radius: 20px;
-                        padding:10px;" href="https://harmonious-druid-e5f2ce.netlify.app/" target="_blank" class="project-github-link">github link</a>
-                        <br>
+            <a
+              class="fa-icon fa-icon-2x"
+              href="https://www.linkedin.com/in/ayush-gupta-8583ayu/"
+              title=""
+            >
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a
+              class="fa-icon fa-icon-2x"
+              href="https://github.com/ayush-a2"
+              title=""
+              target="_blank"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+            
+          </p>
+        </div>
+      </header>
 
-                        <img src="images\Screenshot (457).png" alt="">
-                       
-                        <div class="text" style="color:blue">Github Presentation</div>
-                        <p class="project-description">One presentation with all the information needed for
-                            GitHub customers to be onboarded </p>
-                            <br>
-                            <h3 style="color:crimson">Features</h3>
-                            <ul style="color:white">
-                                
-                            <li>All Details about GitHub</li></ul>
+      <!-- Add your site or app content here -->
 
-                            <br><br><br><br>
-
-                            <h3 class="project-tech-stack" style="color:crimson">TechStack</h3>
-                            <h3 class="project-tech-stack" style="color:blue">Reveal.js</h3>
-                            
+      <div class="container">
+        <div class="row">
+          <div id="about" class="col-xs-12 about section">
+            <div class="card" id="About">
+              <div class="card-block">
+                <h2  id="user-detail-name">About me</h2>
+                <div class="row">
+                  <div class="col-md-4">
+                    <p id="about" class="about section">
+                      <img 
+                        src="./assets/images/ayush.jpg"
+                        class="home-img img-responsive"
+                        alt=""
                         
-                           
-
-                    </div>
-                </div>
-        
-          
-                <div class="card">
-                    <div class="box">
-
-                        <a  style="
-                        background-color: crimson;
-                        border-radius: 20px;
-                        padding:10px;
-                        margin:10px" href="https://cozy-granita-5010e8.netlify.app/" class="project-deployed-link" target="_blank">netlify link</a>
-                        <a  style="
-                        background-color: crimson;
-                        border-radius: 20px;
-                        padding:10px;"   
-                       class="project-github-link"    href="https://github.com/anukul76/bewakoof.git" target="_blank">github link</a>
-                        <br>
-                        <img src="https://i.ibb.co/WynYGhF/Screenshot-458.png" alt="">
-                        <div class="text"style="color:blue">BEcool</div>
-                        <p class="project-description">BEcool is an E-Commerce website, where could buy a variety
-                            of clothes from different categories.Its a clone of Bewakoof 
-                        </p>
-                        <h3 style="color:crimson">Features</h3>
-                        <ul style="color:white">
-                            <li>Search Functionality</li>
-                            <li>Products Catalogue | Product Details</li>
-                            <li>Admin Side Page</li>
-                            <li>Apply Coupon | Payment Page</li>
-                            <li>Login Feature</li>
-                        </ul>
-                        <h3 class="project-tech-stack" style="color:crimson">TechStack</h3>
-                        <h3 class="project-tech-stack" style="color:blue">HTML|CSS|JavaScript|Json</h3>
-                    </div>
-                </div>
-        
-
-                
-                <div class="card">
-                    <div class="box" >
-                        <a style="
-                        background-color: crimson;
-                        border-radius: 20px;
-                        padding:10px;
-                        margin:10px" class="project-deployed-link"
-                          href="https://sparkle-mauve.vercel.app/" target="_blank">netlify link</a>
-                        <a  style="
-                        background-color: crimson;
-                        border-radius: 20px;
-                        padding:10px;"  
-                       class="project-github-link"   href="https://github.com/sarfraj0304/Sephora-Clone" target="_blank">github link</a><br>
-                        <img src="https://i.ibb.co/8xKBcLj/Screenshot-459.png" alt="">
-                        <div class="text" style="color:blue">Sephora</div>
-                        <p class="project-description">Sparkle is a E-commerce Platform which is a clone of Sephora.com we named it as Sparkle. 
-                            Have all ladies accessories and beauty product</p>
-                            <h3 style="color:crimson">Features</h3>
-                            <ul style="color:white">
-                                <li>Search Functionality</li>
-                                <li>Products Catalogue | Product Details</li>
-                                <li>Sorting and Filtering Products</li>
-                                <li>Apply Coupon | Payment Page</li>
-                                <li>Login Feature</li>
-                            </ul>
-                            <h3 class="project-tech-stack" style="color:crimson">TechStack</h3>
-                            <h3 class="project-tech-stack" style="color:blue">HTML|CSS|JavaScript|Json</h3>
-                    </div>
-                </div>
-        
-
-            </div>
-        </div>
-    </section>
-
-    <section class="react-activity-calendar">
-        <h1>GitHub React-Activity-Calendar</h1>
-        <!-- <div class="calendar react-activity-calendar"></div> -->
-        <div class="github">
+                      />
+                    </p>
+                  </div>
+                  <div  class="col-md-8 about section">
+                    <p   id="user-detail-intro">
     
-          <div>
-            <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=ayush-a2&"
-              alt="ayush-a2" alt="streakstat" />
-          </div>
-          <div>
-            <img id="github-top-langs"
-              src="https://github-readme-stats.vercel.app/api/top-langs?username=ayush-a2&show_icons=true&locale=en&layout=compact"
-              alt="ayush-a2" />
-            alt="top_languages" />
-          </div>
-          <div>
-            <img id="github-stats-card"
-              src="https://github-readme-stats.vercel.app/api?username=ayush-a2&show_icons=true&locale=en" alt="ayush-a2" />
-          </div>
-        </div>
-      </section>
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="project-title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
+                      Determined and result-oriented back-end developer
+                      with hands on experience in writing optimized code.
+                      Collaborative, team player proficient in working with
+                      interdisciplinary teams and executing goal oriented
+                      projects. Seeking a challenging position to
+                      continuously enhance knowledge and skills.
+                    </p>
+                    <p class="about section"></p>
+                    <h3>
+                      Email :
+                      <a
+                        href="https://mail.google.com/mail/u/1/?ogbl#inbox?compose=new"
+                        >ayush8583@gmail.com</a
+                      >
+                    </h3>
+                    <h3>Mobile : +91 7800302470</h3>
                     
-                   
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div id="contact-phone" class="head">Phone no</div>
-                                <div class="sub-title">7800302470</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Ghazipur UttarPradesh</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div id="contact-email"
-                                class="head">Email</div>
-                                <div class="sub-title">ayush8583@gmail.com</div>
-                            </div>
-                        </div>
-                    </div>
+                    </h3>
+                    <h3>
+                      Resume :
+                      <a id="resume-button-2"
+                        href="assets\images\resume\Ayush_Gupta_Resume_16-02-2023-21-38-13 (9).pdf"
+                        download="assets\images\resume\Ayush_Gupta_Resume_16-02-2023-21-38-13 (9).pdf"
+                        target="_blank"
+                        onclick="window.open(`'https://drive.google.com/file/d/1QPGUETLJiWWV7Py4MPkcvpeyl5hw3iIJ/view?usp=share_link'`)"
+                        
+                        target="_blank"
+                      >
+                        Resume
+                      </a>
+                    </h3>
+                  </div>
                 </div>
-
-                <div id="rightcol">
-                   
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fab -brands fa-github"></i>
-                            <div class="info">
-                                <div id="contact-github" class="head">Github</div>
-                              <a href="https://github.com/ayush-a2"><div class="sub-title">ayush-a2</div></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fab -brands fa-facebook-f"></i>
-                            <div class="info">
-                                <div class="head">facebook</div>
-                                <a href="https://github.com/ayush-a2"><div class="sub-title">ayush-a2</div></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fab fa-linkedin"></i>
-                            <div class="info">
-                                <div id="contact-linkedin" class="head">linkedin</div>
-                              <a href="https://www.linkedin.com/in/ayush-gupta-8583ayu/">  <div class="sub-title">ayush-gupta-8583ayu</div></a>
-                            </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-               
-               
               </div>
             </div>
+
+          
+            <div class="card" id="Education">
+              <div class="card-block">
+                <h2>Education</h2>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="education-experience">
+                      <small class="date">Present 2023</small>
+                      <h3 class="h5 date-title">Java Backend Development</h3>
+                      <p>Masai School</p>
+                    </div>
+                  </div>
+                  <!-- <div class="col-md-4">
+                    <div class="education-experience">
+                      <small class="date">2016-2019</small>
+                      <h3 class="h5 date-title">
+                      <B class="Com"></B>
+                      </h3>
+                      <p>VBSPU</p>
+                    </div> -->
+                  </div>
+                  <!-- <div class="col-md-4">
+                    <div class="education-experience">
+                      <small class="date">2014-2016</small>
+                      <h3 class="h5 date-title">12th - Science</h3>
+                      <p>Rajkiya Sarvodaya Bal Vidyalaya
+                        Surajmal Vihar, Delhi, 110092</p>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-block">
+                <h2>Language</h2>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="language-experience">
+                      <h3 class="h5">English <small></small></h3>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="language-experience">
+                      <h3 class="h5">Hindi <small></small></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card skills-card" id="skills">
+              <div class="card-block skills-card">
+                <h2 class="skills-card">Skills</h2>
+                <img
+                  class="teckStack skills-card-img name" 
+                  src="./assets/images/TeckStack/html-5.png"
+                  alt="HTML"
+                />
+                <img
+                class="teckStack skills-card-img name"   
+                  src="./assets/images/TeckStack/css-3.png"
+                  alt="CSS"
+                />
+                <img
+                class="teckStack skills-card-img name" 
+                  src="./assets/images/TeckStack/js.png"
+                  alt="JS"
+                />
+                <img
+                class="teckStack skills-card-img name"  
+                  src="./assets/images/TeckStack/java.png"
+                  alt="Java"
+                />
+                <img
+                class="teckStack skills-card-img name" 
+                  src="./assets/images/TeckStack/mysql.png"
+                  alt="MySql"
+                />
+                <img
+                class="teckStack skills-card-img name" 
+                  src="./assets/images/TeckStack/github.png"
+                  alt="Github"
+                />
+                <img
+                class="teckStack skills-card-img name" 
+                  src="./assets/images/TeckStack/oracle.png"
+                  alt="oracle"
+                />
+                <img
+                class="teckStack skills-card-img name" 
+                  src="./assets/images/TeckStack/visual-studio.png"
+                  alt="VisualStudio"
+                />
+                <img
+                class="teckStack skills-card-img name" 
+                  src="./assets/images/TeckStack/SpringBoot.png"
+                  alt="SpringBoot"
+                />
+              </div>
+            </div>
+
+
+            
+
+
+
+
+            <div class="card react-activity-calendar" id="gitCalender">
+              <div class="card-block">
+                <h2>GitHub Streak Stats</h2>
+                <img
+                  class="gitCalender"
+                  id="github-streak-stats"
+                  src="https://github-readme-streak-stats.herokuapp.com?user=ayush-a2&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+                  alt="streakstat"
+                />
+              </div>
+              <div class="card-block">
+                <h2>Github top langs</h2>
+                <img
+                  class="gitCalender"
+                  id="github-top-langs"
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayush-a2&theme=tokyonight"
+                  alt="top_languages"
+                />
+              </div>
+              <div class="card-block">
+                <h2>Git Stats</h2>
+                <img
+                  class="gitCalender react-activity-calendar"
+                  id="github-stats-card"
+                  src="https://github-readme-stats.vercel.app/api?username=ayush-a2&count_private=true"
+                  alt="stat-card"
+                />
+              </div>
+              <!-- <div class="card-block">
+                <h2  class="react-activity-calendar">Git Stats</h2>
+                <img
+                  class="gitCalender"
+                  src="https://github-readme-streak-stats.herokuapp.com?user=naveensharma8527"
+                  alt="stat-card"
+                />
+              </div> -->
+              
+            </div>
+
+
+
+            <div class="card" id="contact">
+              <div class="card-block">
+                <h2>Contact</h2>
+                <div class="row">
+                  <div class="col-md-3">
+                    <!-- <p class="social-buttons">
+                      <a 
+                        href="https://twitter.com/naveen_codes"
+                        title=""
+                        target="_blank"
+                        ><span class="social-round-icon fa-icon"
+                          ><i class="fa fa-twitter"></i></span
+                        >Twitter-Naveen Sharma</a
+                      >
+                    </p> -->
+                  </div>
+                  <div class="col-md-3">
+                    <p class="social-buttons" >
+                      <a id="contact-linkedin"
+                        href="https://www.linkedin.com/in/ayush-gupta-8583ayu/"
+                        title=""
+                        target="_blank"
+                        ><span class="social-round-icon fa-icon"
+                          ><i class="fa fa-linkedin"></i></span
+                        >Linkedin-Ayush Gupta</a
+                      >
+                    </p>
+                  </div>
+
+                  <div class="col-md-3">
+                    <p class="social-buttons">
+                      <a id="contact-github"
+                        href="https://github.com/ayush-a2"
+                        title=""
+                        target="_blank"
+                        ><span class="social-round-icon fa-icon"
+                          ><i class="fa fa-github"></i></span
+                        >Github-Ayush Gupta</a
+                      >
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <p class="social-buttons">
+                      <a id="contact-phone"
+                        ><span class="social-round-icon fa-icon"
+                          ><i class="fa fa-mobile"></i></span
+                        >7800302470</a
+                      >
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <p class="social-buttons">
+                      <a id="contact-email"
+                        href="https://mail.google.com/mail/u/1/?ogbl#inbox?compose=new"
+                        title=""
+                        target="_blank"
+                        ><span class="social-round-icon fa-icon"
+                          ><i class="fa fa-envelope"></i></span
+                        >ayush8583@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-
-
-    <script src="script.js"></script>
-</body>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        scrollRevelation(".card");
+      });
+    </script>
+    <script type="text/javascript" src="./main.bc58148c.js"></script>
+  </body>
 </html>
