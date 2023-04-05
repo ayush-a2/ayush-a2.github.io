@@ -202,3 +202,18 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+let resume1 = document
+  .getElementById("resume-link-1")
+   .addEventListener("click",opendrive);
+
+  let resume2 = document
+  .getElementById("resume-link-2")
+  .addEventListener("click",opendrive);
+
+
+function opendrive(){
+  window.open(
+    (href =
+      "https://drive.google.com/file/d/1QPGUETLJiWWV7Py4MPkcvpeyl5hw3iIJ/view")
+  );
+ }
