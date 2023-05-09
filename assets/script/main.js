@@ -97,16 +97,7 @@ function toggleSkills() {
 skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
-/*==================== Resume ====================*/
-// document.getElementById("resume-button-2").addEventListener("click", () => {
-//   window.open("./assets/pdf/Harit_Khushwas_Resume.pdf", "_blank");
-// });
-// document.getElementById("resume-button-1").addEventListener("click", () => {
-//   window.open("./assets/pdf/Harit_Khushwas_Resume.pdf", "_blank");
-// });
-/*==================== SERVICES MODAL ====================*/
 
-/*==================== PORTFOLIO SWIPER ====================*/
 
 var swiper = new Swiper(document.querySelector(".swiper"), {
   cssMode: true,
@@ -214,6 +205,6 @@ let resume1 = document
 function opendrive(){
   window.open(
     (href =
-      "https://drive.google.com/file/d/1QPGUETLJiWWV7Py4MPkcvpeyl5hw3iIJ/view")
+      "https://drive.google.com/drive/folders/1l-lJR9ymSjroR6jm2wA0H3zE0nXB-_dl?usp=share_link")
   );
  }
