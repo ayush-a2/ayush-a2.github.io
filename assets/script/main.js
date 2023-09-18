@@ -205,6 +205,6 @@ let resume1 = document
 function opendrive(){
   window.open(
     (href =
-      "https://drive.google.com/drive/folders/1l-lJR9ymSjroR6jm2wA0H3zE0nXB-_dl?usp=share_link")
+      "https://drive.google.com/file/d/1-_ER8ZJHF71SYKgGMMAp9qpg6_9C7q20/view?usp=drive_link")
   );
  }
